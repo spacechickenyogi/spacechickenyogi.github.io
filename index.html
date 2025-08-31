@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>My Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adrift Yogi — Yoga for Adventurers</title>
+  <meta name="description" content="Adrift Yogi: yoga, breathwork, and mindfulness for climbers, surfers, hikers, and busy adventurers." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
 </head>
 <body>
-  <h1>Welcome to my website!This is an absolute test :) </h1>
-  <p>This is hosted for free using GitHub Pages 🎉</p>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Adrift Yogi</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <a href="index.html" class="active">Home</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" tabindex="-1">
+    <section class="hero" style="--hero-image: url('assets/hero.jpg')">
+      <div class="overlay"></div>
+      <div class="container hero-inner">
+        <h1 class="headline">Adrift Yogi</h1>
+        <p class="subtitle">Yoga, breathwork, and mindfulness for busy adventurers.</p>
+        <a class="btn btn-primary" href="offerings.html">See Offerings</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Welcome</h2>
+        <p class="lead">Hi, I’m the Adrift Yogi. I help climbers, surfers, hikers, and skiers build strength, mobility, and calm through yoga and breathwork—so you can send your projects and still have energy for life.</p>
+        <p>My teaching blends functional movement, evidence-informed practice, and traditional yoga. Expect grounded flows, breath-led pacing, and simple recovery tools you can use between work and the crag. Whether you’re aiming to level up your bouldering grade, prep for a surf trip, or just feel better day-to-day, I’ve got you.</p>
+        <div class="cards three">
+          <article class="card">
+            <h3>Mobility & Strength</h3>
+            <p>Progressive flows to support joint control, flexibility, and power for your sport.</p>
+          </article>
+          <article class="card">
+            <h3>Breathwork</h3>
+            <p>Simple protocols for focus on the wall, calm before sleep, and recovery after effort.</p>
+          </article>
+          <article class="card">
+            <h3>Mindfulness</h3>
+            <p>Practical tools to manage fear, build confidence, and enjoy the ride.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Adrift Yogi · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

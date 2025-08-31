@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Adrift Yogi</title>
+  <meta name="description" content="Contact Adrift Yogi for classes, workshops, and retreats." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Adrift Yogi</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="site-nav" role="navigation" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="offerings.html">Offerings</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" tabindex="-1">
+    <section class="page-hero small">
+      <div class="container">
+        <h1>Get in touch</h1>
+        <p class="subtitle">Questions, bookings, collaborations</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <form id="contact-form" class="card" method="POST" action="https://formspree.io/f/YOUR_FORMSPREE_ID">
+          <p class="muted small">Prefer email? <a href="mailto:hello@your-domain.com?subject=Adrift%20Yogi%20Enquiry">hello@your-domain.com</a></p>
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="6" required></textarea>
+          </label>
+          <!-- Honeypot -->
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
+          <button class="btn btn-primary" type="submit">Send</button>
+          <p id="form-status" class="muted" role="status" aria-live="polite"></p>
+        </form>
+
+        <aside class="card">
+          <h3>Booking Info</h3>
+          <p>Based in Bristol, available across the UK and online.</p>
+          <ul class="list">
+            <li>1:1 and small group sessions</li>
+            <li>Corporate / team sessions</li>
+            <li>Workshops and event collaborations</li>
+          </ul>
+          <p class="muted small">Tip: replace the form action with your Formspree endpoint and update your email above.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Adrift Yogi · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
